@@ -1,4 +1,4 @@
-CentOS最小化安装
+CentOS最小化安装（版本CentOS7.6）
 ------
 ##### 安装扩展源epel
     yum install epel-release 安装扩展源
