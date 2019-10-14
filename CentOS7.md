@@ -1,5 +1,16 @@
 CentOS最小化安装（版本CentOS7.6）
 ------
+##### 网络配置文件
+	/etc/sysconfig/network-scripts/ifcfg-eth0 #配置文件位置
+	
+	BOOTPROTO="static" #dhcp改为static(静态网络)
+	ONBOOT="yes" #开机启用本配置
+	IPADDR=192.168.7.106 #静态IP
+	GATEWAY=192.168.7.1 #默认网关
+	NETMASK=255.255.255.0 #子网掩码
+	DNS1=192.168.7.1 #DNS 配置
+	
+	service network restart #重启网络
 ##### 安装扩展源epel
     yum install epel-release 安装扩展源
     yum update 更新系统
